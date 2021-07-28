@@ -3,13 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia cesta[][]={{"Pera","100"},{"Jaca","200"},{"Pera","100"},{"Maçã","900"},{"Uva","89"}}
+		inteiro contador = 0
+		cadeia cesta[][]={{"Pera","100"},{"Jaca","200"},{"Banana","300"},{"Maçã","900"},{"Uva","89"}}
 
-		
-		escreva ("Produto: ")
-		escreva (cesta[0][0])
-		escreva (" Quantidade: ")
-		escreva (cesta[0][1])
+		faca {
+
+			escreva("Produto: " + cesta[contador][0] + " Quantidade: " + cesta[contador][1] + "\n")
+			contador++
+			
+			}enquanto(contador<=4)
+
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 233; 
+ * @POSICAO-CURSOR = 123; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
